@@ -6,6 +6,7 @@ public class HomeWork {
             task3();
             task4();
             task5();
+            task6();
 
         }
     public static void task1 () {
@@ -71,51 +72,52 @@ public class HomeWork {
     }
     public static void task5 () {
         System.out.println("Задача 5");
-        int monthNumber = 3;
+        int monthNumber = 7;
 
         switch (monthNumber){
             case 12:
-                System.out.println("Сезон : ЗИМА");
-                break;
             case 1:
-                System.out.println("Сезон : ЗИМА");
-                break;
             case 2:
                 System.out.println("Сезон : ЗИМА");
                 break;
             case 3:
-                System.out.println("Сезон : ВЕСНА");
-                break;
             case 4:
-                System.out.println("Сезон : ВЕСНА");
-                break;
             case 5:
                 System.out.println("Сезон : ВЕСНА");
                 break;
             case 6:
-                System.out.println("Сезон : ЛЕТО");
-                break;
             case 7:
-                System.out.println("Сезон : ЛЕТО");
-                break;
             case 8:
                 System.out.println("Сезон : ЛЕТО");
                 break;
             case 9:
-                System.out.println("Сезон : ОСЕНЬ");
-                break;
             case 10:
-                System.out.println("Сезон : ОСЕНЬ");
-                break;
             case 11:
                 System.out.println("Сезон : ОСЕНЬ");
                 break;
 
-        } if (monthNumber>=13){
+            default:
             System.out.println("Задача не выполнена!!!");
         }
 
 
 
+        }
+    public static void task6() {
+        System.out.println("Задача №6");
+        int totalCapacity=93;
+
+        if (totalCapacity<102){
+            System.out.println("Места в вагоне есть.");
+        }
+        else   {
+            System.out.println("Мест в вагоне НЕТ");
+        }
+        if (totalCapacity < 60) {
+            System.out.println("Сидячие места есть!");
+        }
+        if (totalCapacity > 60 && totalCapacity < 102){
+            System.out.println("Есть только стоячие места!");
+        }
         }
 }
