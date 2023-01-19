@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class HomeWork {
 
         public static void main(String[] args) {
@@ -7,6 +9,7 @@ public class HomeWork {
             task4();
             task5();
             task6();
+            task7();
 
         }
     public static void task1 () {
@@ -105,19 +108,54 @@ public class HomeWork {
         }
     public static void task6() {
         System.out.println("Задача №6");
-        int totalCapacity=93;
+        int number = 12;
+        if (number%2==0){
+            System.out.println(number + " Четное число");
+        }else {
+            System.out.println(number+ " Нечетное число");
+        }
+        }
+    public static void task7() {
+        System.out.println("Задача №7");
+        Random rnd = new Random();
+        int a = (int) rnd.nextInt(899) + 100;
+        int b = a % 10;
+        int c = (a / 10) % 10;
+        int d = (a / 100) % 10;
+        if (b > c && b > d) {
+            System.out.println("В числе " + a + " наибольшая цифра " + b);
+        } else if (c > b && c > d) {
+            System.out.println("В числе " + a + " наибольшая цифра " + c);
+        } else {
+            System.out.println("В числе " + a + " наибольшая цифра " + d);
+        }
+        if (d>b && d>c && b>c){
+            System.out.println("На уменьшение - " + d + b + c);
+        } else if (b>d && b>c && c>d){
+            System.out.println("На уменьшение - " + b + c + d);
 
-        if (totalCapacity<102){
-            System.out.println("Места в вагоне есть.");
+        } else if (c>d && c>b && b>d) {
+            System.out.println("На уменьшение - " + c + b + d);
+        } else if (b>c && b>d && d>c) {
+            System.out.println("На уменьшение - " + b + d + c);
+        } else if (b>c && b>d && c>d) {
+            System.out.println("На уменьшение - " + b + c + d );
+        } else {
+            System.out.println("На уменьшение - " + c + d + b);
         }
-        else   {
-            System.out.println("Мест в вагоне НЕТ");
+
+        //for (int i = 50;i > 5; i-=5) {
+          //  System.out.println(i);
+
+            int g= 1;
+            while (g < 15) {
+                System.out.println(g);
+                g += 2;
+
+            }
+
+
         }
-        if (totalCapacity < 60) {
-            System.out.println("Сидячие места есть!");
-        }
-        if (totalCapacity > 60 && totalCapacity < 102){
-            System.out.println("Есть только стоячие места!");
-        }
-        }
-}
+
+
+    }
